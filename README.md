@@ -1,4 +1,4 @@
-# HeroTileExample
+# SimpleVideoPlayer Example
 ![Roku](https://img.shields.io/badge/Roku-Dev-blue.svg)
 
 SimpleVideoPlayer Sample Channel for the Roku Platform.
