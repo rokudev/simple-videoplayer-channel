@@ -31,27 +31,28 @@ end sub
 sub setContent()
 
   'Change the image
-  m.Image.uri="pkg:/images/DanGilbert.jpg"
-  ContentNode = CreateObject("roSGNode", "ContentNode")
-  ContentNode.streamFormat = "mp4"
-  ContentNode.url = "http://video.ted.com/talks/podcast/DanGilbert_2004_480.mp4"
-  ContentNode.ShortDescriptionLine1 = "Dan Gilbert asks, Why are we happy?"
-  ContentNode.Description = "Harvard psychologist Dan Gilbert says our beliefs about what will make us happy are often wrong -- a premise he supports with intriguing research, and explains in his accessible and unexpectedly funny book, Stumbling on Happiness."
-  ContentNode.StarRating = 80
-  ContentNode.Length = 1280
-  ContentNode.Title = "Dan Gilbert asks, Why are we happy?"
-
-  'm.Image.uri="pkg:/images/BigBuckBunny.jpg"
+  'm.Image.uri="pkg:/images/DanGilbert.jpg"
   'ContentNode = CreateObject("roSGNode", "ContentNode")
   'ContentNode.streamFormat = "mp4"
   'ContentNode.url = "http://video.ted.com/talks/podcast/DanGilbert_2004_480.mp4"
-  'ContentNode.ShortDescriptionLine1 = "Can we create new life out of our digital universe?"
-  'ContentNode.Description = "He walks the TED2008 audience through his latest research into fourth-generation fuels -- biologically created fuels with CO2 as their feedstock. His talk covers the details of creating brand-new chromosomes using digital technology, the reasons why we would want to do this, and the bioethics of synthetic life. A fascinating Q and A with TED's Chris Anderson follows.
+  'ContentNode.ShortDescriptionLine1 = "Dan Gilbert asks, Why are we happy?"
+  'ContentNode.Description = "Harvard psychologist Dan Gilbert says our beliefs about what will make us happy are often wrong -- a premise he supports with intriguing research, and explains in his accessible and unexpectedly funny book, Stumbling on Happiness."
   'ContentNode.StarRating = 80
-  'ContentNode.Length = 1972
-  'ContentNode.Title = "Craig Venter asks, Can we create new life out of our digital universe?"
+  'ContentNode.Length = 1280
+  'ContentNode.Title = "Dan Gilbert asks, Why are we happy?"
 
-  'm.Image.uri="pkg:/images/CraigVenter-2008.jpg"
+  m.Image.uri="pkg:/images/CraigVenter-2008.jpg"
+  ContentNode = CreateObject("roSGNode", "ContentNode")
+  ContentNode.streamFormat = "mp4"
+  ContentNode.url = "http://video.ted.com/talks/podcast/DanGilbert_2004_480.mp4"
+  ContentNode.ShortDescriptionLine1 = "Can we create new life out of our digital universe?"
+  ContentNode.Description = "He walks the TED2008 audience through his latest research into fourth-generation fuels -- biologically created fuels with CO2 as their feedstock. His talk covers the details of creating brand-new chromosomes using digital technology, the reasons why we would want to do this, and the bioethics of synthetic life. A fascinating Q and A with TED's Chris Anderson follows."
+  ContentNode.StarRating = 80
+  ContentNode.Length = 1972
+  ContentNode.Title = "Craig Venter asks, Can we create new life out of our digital universe?"
+  ContentNode.subtitleConfig = {Trackname: "pkg:/source/CraigVenter.srt" }
+
+  'm.Image.uri="pkg:/images/BigBuckBunny.jpg"
   'ContentNode = CreateObject("roSGNode", "ContentNode")
   'ContentNode.streamFormat = "mp4"
   'ContentNode.url = "http://video.ted.com/talks/podcast/CraigVenter_2008_480.mp4"
@@ -68,8 +69,12 @@ sub setContent()
   m.ButtonGroup.buttons = Buttons
 
   'Change the details
-  m.Title.text = "Dan Gilbert asks, Why are we happy?"
-  m.Details.text = "Harvard psychologist Dan Gilbert says our beliefs about what will make us happy are often wrong -- a premise he supports with intriguing research, and explains in his accessible and unexpectedly funny book, Stumbling on Happiness."
+  'm.Title.text = "Dan Gilbert asks, Why are we happy?"
+  'm.Details.text = "Harvard psychologist Dan Gilbert says our beliefs about what will make us happy are often wrong -- a premise he supports with intriguing research, and explains in his accessible and unexpectedly funny book, Stumbling on Happiness."
+
+  m.Title.text = "Craig Venter asks, Can we create new life out of our digital universe?"
+  m.Details.text =  "He walks the TED2008 audience through his latest research into fourth-generation fuels -- biologically created fuels with CO2 as their feedstock. His talk covers the details of creating brand-new chromosomes using digital technology, the reasons why we would want to do this, and the bioethics of synthetic life. A fascinating Q and A with TED's Chris Anderson follows."
+
 end sub
 
 ' Called when a key on the remote is pressed
